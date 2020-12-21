@@ -1,0 +1,28 @@
+{% extends "blood_app/base.html" %}
+
+{% block content %}
+  <main role="main">
+
+    <div class="album py-5 bg-red">
+      <div class="container">
+        <div class="row">
+          {% for i in all_group %}
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body">
+                <h3 class="card-text">Blood Group: {{i.name}}</h3>
+                <h3 class="card-text">Total Donor Available: {{i.total}}</h3>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="{% url 'group' i.id %}" class="btn btn-sm btn-danger">See Donor Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </main>
+{% endblock %}
