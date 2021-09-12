@@ -16,3 +16,11 @@ Bootstrap
 Back-End: Python
 Database: MySQL
 Back-End Framework: Django
+
+
+How to run:
+Install python first.
+Run 'pip install -r requirements.txt' to install all pip packages.
+run 'python manage.py migrate'
+run 'python manage.py runserver'
+The development server will be availabe at http://127.0.0.1:8000/
