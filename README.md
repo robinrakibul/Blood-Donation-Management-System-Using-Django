@@ -22,6 +22,6 @@ How to run:
 Install python first.
 Run 'pip install -r requirements.txt' to install all pip packages.
 run 'python manage.py migrate'.
-run 'python manage.py runserver'.
 create database named 'blooddonation' and import the sql file.
+Finally, run 'python manage.py runserver'.
 The development server will be availabe at http://127.0.0.1:8000/
