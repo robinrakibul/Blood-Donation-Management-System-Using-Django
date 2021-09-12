@@ -21,7 +21,7 @@ Back-End Framework: Django
 How to run:
 Install python first.
 Run 'pip install -r requirements.txt' to install all pip packages.
-run 'python manage.py migrate'.
 create database named 'blooddonation' and import the sql file.
+run 'python manage.py migrate' for auth service of Django.
 Finally, run 'python manage.py runserver'.
 The development server will be availabe at http://127.0.0.1:8000/
